@@ -1,7 +1,44 @@
+body {
+    margin: 0px;
+    font-family: roboto;
+    text-decoration: none;
+}
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
 width: 100%;
 height: 176px;
 background-color: #8AB9FF;
 }
+
+header img {
+    width: 100px; 
+    height: auto;
+    align-self: center;
+    padding-left: 10px;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-column: 3 / 3            /** Plassering som children  */
+}
+
+nav ul {
+
+    grid-row: 2/3;
+    align-content: end;
+}
+
+.menu li {
+    display: inline;
+    padding: 40px 40px;
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
 
