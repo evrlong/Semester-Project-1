@@ -1,8 +1,17 @@
 body {
     margin: 0px;
-    font-family: roboto;
+    font-family: roboto; 
+    
+}
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
     text-decoration: none;
 }
+
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
@@ -13,10 +22,10 @@ background-color: #8AB9FF;
 }
 
 header img {
-    width: 100px; 
+    width: 130px; 
     height: auto;
     align-self: center;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 nav {
@@ -39,7 +48,7 @@ nav ul {
 
 .menu a {
     color: white;
-    text-decoration: none;
+    
 }
 
 .visit {
@@ -47,7 +56,6 @@ nav ul {
     color: #FFFF;
     grid-row: 1/1;
     justify-self: center;
-    text-decoration: none;
     background-color: #FF9E9E;
     border-radius: 0px 0px 5px 5px;
     box-shadow: 2px 2px 2px #757575;
@@ -61,3 +69,42 @@ nav ul {
 }
 
 
+.exhibit_head {
+    background-color: #757575;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+
+.card_box {
+    width: 100%;
+}
+
+.cards_wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+        width: 80%;
+        margin: auto;
+}
+
+.card_box img{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    vertical-align: middle;
+    
+}
+
+
+.card_info {
+    background-color: #FF9E9E;
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+
+}
+  
