@@ -44,6 +44,10 @@ header img {
   padding-left: 20px;
 }
 
+header ul {
+  padding: 15px;
+}
+
 nav {
   display: grid;
   grid-template-rows: 1fr auto;
