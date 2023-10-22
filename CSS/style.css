@@ -1,110 +1,233 @@
 body {
-    margin: 0px;
-    font-family: roboto; 
-    
+  margin: 0px;
+  font-family: roboto;
+  color: white;
 }
 
-a:link, 
-a:visited, 
-a:hover, 
+a:link,
+a:visited,
+a:hover,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
 }
 
+h3 {
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 140%;
+}
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    grid-template-rows: 1fr;
-width: 100%;
-height: 176px;
-background-color: #8AB9FF;
+li,
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* FONTS */
+
+.text_wrapper p {
+  color: #000;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 200%;
+  padding: 10px 0px 10px 0px;
 }
 
 header img {
-    width: 130px; 
-    height: auto;
-    align-self: center;
-    padding-left: 20px;
+  width: 130px;
+  height: auto;
+  align-self: center;
+  padding-left: 20px;
 }
 
 nav {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-column: 3 / 3            /** Plassering som children  */
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-column: 3 / 3; /** Plassering som children  */
 }
 
-nav ul {
+/* ---- Header/footer-------*/
 
-    grid-row: 2/3;
-    align-content: end;
+footer,
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 176px;
+  background-color: #8ab9ff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: #8ab9ff;
+}
+
+.footer_section li {
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 140%;
+}
+
+.footer_section .fa {
+  font-size: 40px;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.footer_section {
+  padding: 0px 40px 40px 40px;
+  text-align: left;
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+.opening_hours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.footer_section nav ul {
+  grid-row: 2/3;
+  align-content: end;
 }
 
 .menu li {
-    display: inline;
-    padding: 0px 40px  0px 40px;
-
+  display: inline;
+  padding: 0px 40px 0px 40px;
 }
 
 .menu a {
-    color: white;
-    
+  color: white;
 }
 
 .visit {
-    text-align: center;
-    color: #FFFF;
-    grid-row: 1/1;
-    justify-self: center;
-    background-color: #FF9E9E;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 2px 2px 2px #757575;
-    width: 90px;
-    height: 20px;
-    flex-shrink: 0;
+  text-align: center;
+  color: #ffff;
+  grid-row: 1/1;
+  justify-self: center;
+  background-color: #ff9e9e;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 2px 2px 2px #757575;
+  width: 90px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .fa-search {
-    color: #FFFF;
+  color: #ffff;
 }
 
-
-.exhibit_head {
-    background-color: #757575;
-    width: 80%;
-    margin: auto;
-    color: white;
+.img_head {
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 100% 20%;
 }
 
+.section_head {
+  background-color: #757575;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.section_head h1 {
+  padding: 10px;
+}
 
 .card_box {
-    width: 100%;
+  width: 100%;
 }
-
+.text_wrapper,
 .cards_wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-        width: 80%;
-        margin: auto;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
-.card_box img{
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    vertical-align: middle;
-    
+.text_wrapper {
+  display: grid;
+  grid-gap: 150px;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
 }
 
+/* Exhibition spaces */
+
+.card_box img {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  display: block;
+}
+
+.card_1 {
+  background: #ffaa31;
+}
+
+.card_2 {
+  background: #6bb577;
+}
+
+.card_3 {
+  background: #db6060;
+}
+.card_4 {
+  background: #daa75d;
+}
+.card_5 {
+  background: #373730;
+}
+
+.card_6 {
+  background: #b2d1ff;
+}
 
 .card_info {
-    background-color: #FF9E9E;
-    width: 100%;
-    height: 80px;
-    margin: 0px;
-
+  width: 100%;
+  height: 140px;
+  margin: 0px;
 }
-  
+
+.card_info h2 {
+  margin: 0px;
+  text-align: end;
+  padding: 10px 20px 0px 0px;
+  color: white;
+}
+/* Whats new */
+
+.card_7 {
+  background: #4a8dad;
+}
+
+.card_8 {
+  background: #7b5cae;
+}
+
+.card_9 {
+  background: #7b563b;
+}
