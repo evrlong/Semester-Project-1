@@ -334,6 +334,7 @@ footer {
 
 .text_wrapper_involved h4 {
   font-weight: 300;
+  margin-top: 10px;
 }
 
 .text_wrapper_involved h2 {
@@ -341,11 +342,16 @@ footer {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  margin-top: 5px;
+  margin: 5px 0px 20px 0px;
 }
 
 .left_section {
   padding-right: 15%;
+}
+
+.left_section img,
+.right_section img {
+  padding: 30px 0px 0px 0px;
 }
 
 .right_section {
@@ -358,4 +364,86 @@ footer {
 
 .hours b {
   color: #ffa8a8;
+}
+
+/* Booking */
+
+.section_wrapper {
+  background-color: #8ab9ff;
+  width: 70%;
+  margin: auto;
+  height: 800px;
+}
+
+.section_wrapper .section_head {
+  width: 100%;
+}
+
+.book_button {
+  width: 70%;
+  height: 70px;
+  padding: 0px;
+  margin: 30px auto 10px auto;
+  border-style: none;
+  border-radius: 5px;
+  background: #627d92;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.book_button h3 {
+  padding: 10px;
+  margin: 0px;
+}
+
+.split_wrapper {
+  display: flex;
+}
+
+.left_split {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.right_split {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input_prop {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  width: 70%;
+  margin: 0px auto 0px auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  flex-shrink: 0;
+  border: none;
+}
+
+.comment_prop {
+  background-color: white;
+  height: 40%;
+}
+
+.left_split label,
+.right_split label {
+  width: 70%;
+  margin: 30px auto 5px auto;
+}
+
+.select_prop {
+  border: none;
+  appearance: none;
+  padding: 0 30px 0 15px;
+  width: 70%;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

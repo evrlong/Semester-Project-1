@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
 
-    <title>Events - Community Science Museum</title>
+    <title>Home - Community Science Museum</title>
 </head>
 
 <body>
@@ -26,85 +25,61 @@
                 <li><a href="explore.html">EXPLORE</a></li>
                 <li><i class="fa fa-search" aria-hidden="true"></i></li>
             </ul>
+
         </nav>
+
     </header>
 
-    <img class="img_head" src="IMAGES\scott-webb-102825.jpg">
+    <img class="img_head" src="IMAGES\billetto-editorial-334686.jpg">
     <section class="section_wrapper">
-        <div class="text_wrapper_involved">
-            <section class="left_section">
+        <div class="section_head">
+            <h1>Book your spot</h1>
+        </div>
 
-                <img src="ICONS\handicap.svg">
+        <div class="split_wrapper">
+            <div class="left_split">
+                <label for="name">Name:</label>
+                <input class="input_prop" type="text" name="name">
+                <label for="email">Email:</label>
+                <input class="input_prop" type="text" name="email">
 
-                <h2>Accessibility</h2>
+                <label for="guests">Total guests</label>
+                <select class="input_prop classic" id="guests" name="guests">
+                    <option value="1">1 GUEST</option>
+                    <option value="2">2 GUESTS</option>
+                    <option value="3">3 GUESTS</option>
+                    <option value="4">4 GUESTS</option>
+                    <option value="5">5 GUESTS</option>
+                    <option value="6">6 GUESTS</option>
+                </select>
 
-                <h4>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs
-                    for the visually impaired.
-                </h4>
-                <img src="ICONS\admission.svg">
-                <h2>Admission</h2>
+            </div>
 
-                <h4>The entrance is free for all.
-                </h4>
-                <h4>There are guided tours of the museum that leave every hour. </h4>
-                <h4>Tours are 70 NOK per person and include a handy printed guide of the museum.
-                </h4>
-                <h4>If you would like to organise a guided tour for your group of 6 or more people, please contact us to
-                    arrange the tour</h4>
+            <div class="right_split">
+                <label for="start">Date:</label>
+                <input class="input_prop" type="date" id="start" name="booking-start" value="2023-11-25"
+                    min="2023-11-25" max="2024-12-31" />
+                <label for="event">Event:</label>
+                <select class="input_prop" id="cars" name="cars">
+                    <option value="Widnall">Professor Widnall </option>
+                    <option value="Night">Night at the museum</option>
+                    <option value="Energetica">Energetica Exhibition</option>
+                </select>
 
-                <button class="ticket_button">
-                    <h3> Book tour now </h3>
+                <label for="comment">Comment</label>
+
+                <textarea class="input_prop comment_prop" id="comment" name="comment" rows="5" cols="33"></textarea>
+
+                <button class="book_button">
+                    <h3> Submit </h3>
                 </button>
 
 
-            </section>
-            <section class="right_section">
-                <img src="ICONS\shop.svg">
-                <h2>Shop and café </h2>
-                <h4>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs
-                    that allow you to continue to explore science even after you've left the museum.
-
-                </h4>
-                <h4>
-                    There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks
-                    and more.
-
-                </h4>
-                <img src="ICONS\Location.svg">
-                <h2>Location</h2>
-                <h4>The museum is located at 32 Primrose Avenue, Lancaster, L14 5RP, UK
-
-                </h4>
-
-                <img src="ICONS\open sign.svg">
-                <h2>Opening Hours</h2>
-                <div class="opening_hours">
-                    <div class="days">
-                        <li><a>Monday</a></li>
-                        <li><a>Tuesday</a></li>
-                        <li><a>Wednesday</a></li>
-                        <li><a>Thursday</a></li>
-                        <li><a>Saturday</a></li>
-                        <li><a>Sunday</a></li>
-                    </div>
-                    <div class="hours">
-                        <li><a><b>CLOSED</b></a></li>
-                        <li><a>10 - 16</a></li>
-                        <li><a>10 - 16</a></li>
-                        <li><a>10 - 16</a></li>
-                        <li><a>09 - 16</a></li>
-                        <li><a>09 - 13</a></li>
-                    </div>
-
-
-
-
-            </section>
-
+            </div>
         </div>
 
-
     </section>
+
 
 
 
