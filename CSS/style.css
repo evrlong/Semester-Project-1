@@ -374,7 +374,6 @@ footer {
   margin: auto;
   height: 800px;
 }
-
 .section_wrapper .section_head {
   width: 100%;
 }
@@ -429,6 +428,7 @@ footer {
 .comment_prop {
   background-color: white;
   height: 40%;
+  text-align: left;
 }
 
 .left_split label,
@@ -437,13 +437,35 @@ footer {
   margin: 30px auto 5px auto;
 }
 
-.select_prop {
-  border: none;
-  appearance: none;
-  padding: 0 30px 0 15px;
-  width: 70%;
-  color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.4);
-  font-size: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.align_left {
+  text-align: left;
+}
+
+/* Confirmed */
+
+.section_wrapper_confirmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+}
+
+.section_wrapper_confirmed h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.section_wrapper_confirmed h5 {
+  padding-top: 40px;
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  width: 50%;
+}
+
+.section_wrapper_confirmed b {
+  font-size: 22px;
+  font-weight: 700;
 }
