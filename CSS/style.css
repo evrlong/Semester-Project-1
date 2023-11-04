@@ -505,6 +505,7 @@ footer {
   }
   .info_bottom ul {
     columns: 2;
+    -webkit-columns: 2;
   }
 
   .last_order {
