@@ -469,3 +469,59 @@ footer {
   font-size: 22px;
   font-weight: 700;
 }
+
+/* Mobile view */
+
+@media only screen and (max-width: 601px) {
+  footer {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer_section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .opening_hours_footer {
+    width: fit-content;
+    margin: auto;
+  }
+  .days_footer {
+    text-align: left;
+  }
+
+  .hours_footer {
+    text-align: right;
+  }
+
+  .opening_hours_top {
+    order: -1;
+  }
+
+  .info_bottom {
+    order: 2;
+  }
+  .info_bottom ul {
+    columns: 2;
+  }
+
+  .last_order {
+    order: 3;
+  }
+
+  .footer_section .fa {
+    margin: 5px;
+  }
+
+  .text_wrapper_involved {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .left_section,
+  .right_section {
+    padding: 10px 0px 10px 0px;
+  }
+}
