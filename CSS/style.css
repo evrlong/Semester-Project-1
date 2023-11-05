@@ -491,13 +491,13 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 130px;
+    height: 105px;
     position: fixed;
   }
 
   header img {
-    width: 90px;
-    height: auto;
+    width: auto;
+    height: 67px;
     align-self: center;
     padding-left: 5%;
   }
@@ -566,7 +566,7 @@ footer {
   #sidemenu .button-side {
     position: fixed;
     top: 40px;
-    right: 60px;
+    right: 20px;
     transition: 0.2s;
   }
   #sidemenu.active .button-side {
@@ -585,8 +585,8 @@ footer {
   }
 
   .button-side span {
-    width: 35px;
-    height: 4px;
+    width: 40px;
+    height: 5px;
     background: #ffffff;
     display: block;
     margin-top: 4px;
@@ -626,6 +626,16 @@ footer {
   .cards_wrapper,
   .text_wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .card_box img {
+    height: 90px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .card_info {
+    height: 40px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
