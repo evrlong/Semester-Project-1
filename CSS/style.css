@@ -490,7 +490,6 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 130px;
-    position: fixed;
   }
 
   header img {
@@ -554,7 +553,7 @@ footer {
   }
 
   #sidemenu {
-    position: fixed;
+    position: relative;
     background: #757575;
     width: 150px;
     height: 600px;
@@ -562,9 +561,9 @@ footer {
     transition: 0.4s;
   }
   #sidemenu .button-side {
-    position: absolute;
+    position: relative;
     top: 40px;
-    right: 160px;
+    right: 60px;
     transition: 0.2s;
   }
   #sidemenu.active .button-side {
