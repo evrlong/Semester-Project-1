@@ -487,13 +487,14 @@ footer {
   /* Header/Footer */
 
   header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 130px;
+    position: fixed;
   }
 
   header img {
-    position: absolute;
     width: 90px;
     height: auto;
     align-self: center;
@@ -552,9 +553,9 @@ footer {
   .right_section {
     padding: 10px 0px 10px 0px;
   }
-
+  /* Sidemenu */
   #sidemenu {
-    position: relative;
+    position: fixed;
     background: #757575;
     width: 150px;
     height: 600px;
@@ -562,7 +563,7 @@ footer {
     transition: 0.4s;
   }
   #sidemenu .button-side {
-    position: relative;
+    position: fixed;
     top: 40px;
     right: 60px;
     transition: 0.2s;
@@ -611,6 +612,12 @@ footer {
 
   .sidemenu_container {
     padding: 50px 40px 10px 20px;
+  }
+
+  /*Event*/
+
+  .event_container {
+    flex-direction: column;
   }
 }
 
