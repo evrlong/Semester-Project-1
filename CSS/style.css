@@ -3,6 +3,9 @@ body {
   font-family: roboto;
   color: white;
 }
+.burger-dropdown {
+  display: none;
+}
 
 a:link,
 a:visited,
@@ -472,7 +475,100 @@ footer {
 
 /* Mobile view */
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 701px) {
+  /* display: none */
+
+  header ul,
+  .visit,
+  .magnify {
+    display: none;
+  }
+
+  #sidemenu {
+    position: fixed;
+    background: #757575;
+    width: 150px;
+    height: 600px;
+    right: -150px;
+    transition: 0.4s;
+    
+  }
+  #sidemenu .button-side {
+    position: absolute;
+    top: 40px;
+    right: 160px;
+    transition: 0.2s;
+  }
+  #sidemenu.active .button-side {
+  
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  #sidemenu.active span {
+    width: 20px;
+    height: 5px;
+    background: #ffffff;
+    display: block;
+    margin-top: 4px;
+    
+  }
+
+  .button-side span {
+    width: 35px;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    margin-top: 4px;
+  }
+
+
+
+  #sidemenu.active {
+    width: 100%;
+    right: 0px;
+    box-shadow: 2px 2px 5px black;
+  }
+
+ 
+    
+  }
+
+  #sidemenu a {
+    list-style: none;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 20px;
+
+  }
+
+  #sidemenu img {
+    max-height: 20px;
+    left: 5px;
+  }
+
+  .sidemenu_container {
+    padding: 50px 40px 10px 20px;
+  }
+
+  /* Header/Footer */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+  }
+
+  header img {
+    width: 90px;
+    height: auto;
+    align-self: center;
+    padding-left: 5%;
+  }
+
   footer {
     text-align: center;
     justify-content: center;
@@ -498,6 +594,7 @@ footer {
 
   .opening_hours_top {
     order: -1;
+    -webkit-order: -1;
   }
 
   .info_bottom {
@@ -505,7 +602,6 @@ footer {
   }
   .info_bottom ul {
     columns: 2;
-    -webkit-columns: 2;
   }
 
   .last_order {
