@@ -493,6 +493,7 @@ footer {
   }
 
   header img {
+    position: absolute;
     width: 90px;
     height: auto;
     align-self: center;
