@@ -620,6 +620,8 @@ footer {
   .event_container {
     flex-direction: column;
   }
+
+  /*Index*/
 }
 
 /* DESKTOP VIEW */
