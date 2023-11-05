@@ -622,6 +622,11 @@ footer {
   }
 
   /*Index*/
+
+  .cards_wrapper,
+  .text_wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* DESKTOP VIEW */
