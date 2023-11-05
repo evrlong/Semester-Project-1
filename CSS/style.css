@@ -313,14 +313,14 @@ footer {
 .event_night {
   background: #7b563b;
 }
-
+.mob_ticket_button,
 .ticket_button {
   color: white;
   width: 100%;
   background-color: #8ab9ff;
   border-style: none;
 }
-
+.mob_ticket_button h3,
 .ticket_button h3 {
   margin: 10px;
 }
@@ -480,7 +480,8 @@ footer {
 
   header ul,
   .visit,
-  .magnify {
+  .magnify,
+  .ticket_button {
     display: none;
   }
 
@@ -626,7 +627,8 @@ footer {
 @media only screen and (min-width: 768px) {
   /*Display none */
 
-  .sidemenu_container {
+  .sidemenu_container,
+  .mob_ticket_button {
     display: none;
   }
 }
