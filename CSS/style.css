@@ -161,7 +161,7 @@ footer {
   height: 250px;
   flex-shrink: 0;
   object-fit: cover;
-  object-position: 100% 20%;
+  object-position: left top;
   position: relative;
   z-index: -1;
 }
@@ -485,6 +485,16 @@ footer {
     display: none;
   }
 
+  /* Img adjustment - mobile*/
+
+  .head_involved {
+    object-position: 0% 55%;
+  }
+
+  .head_visit {
+    object-position: 0% 40%;
+  }
+
   /* Header/Footer */
 
   header {
@@ -500,6 +510,11 @@ footer {
     height: 67px;
     align-self: center;
     padding-left: 5%;
+  }
+
+  .img_head {
+    top: 50px;
+    height: 170px;
   }
 
   footer {
@@ -647,5 +662,19 @@ footer {
   .sidemenu_container,
   .mob_ticket_button {
     display: none;
+  }
+
+  /* IMG adjustment - Desktop */
+
+  .head_involved {
+    object-position: 0% 58%;
+  }
+
+  .head_visit {
+    object-position: 0% 50%;
+  }
+
+  .head_index {
+    object-position: 0% 15%;
   }
 }
