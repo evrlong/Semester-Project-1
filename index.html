@@ -26,10 +26,17 @@
                 <li><a href="events.html">EVENTS</a></li>
                 <li><a href="involved.html">GET INVOLVED</a></li>
                 <li><a href="explore.html">EXPLORE</a></li>
-                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li><i class="fa fa-search" aria-hidden="true" id="search-icon"></i></li>
             </ul>
-
         </nav>
+
+        <div id="search-overlay">
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search">
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+
 
         <div id="sidemenu">
             <div class="button-side" onclick="show_hide()">
@@ -56,10 +63,13 @@
                     <div class="topmenu_item_mob" alt="Home">VISIT US</div>
                 </a>
 
+                <a href="#" id="search_mobile">
+                    <div class="topmenu_item_mob" alt="Home">SEARCH</div>
+                </a>
+                <script src="JS/script.js"></script>
 
             </div>
         </div>
-
     </header>
 
     <img class="img_head head_index" src="IMAGES\billetto-editorial-334686.jpg">

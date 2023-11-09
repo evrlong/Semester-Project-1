@@ -207,6 +207,37 @@ footer {
   margin: auto;
 }
 
+/* Search-function */
+
+#search_background {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#search_bar {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+#search_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 0px;
+}
+
 /* Exhibition spaces */
 
 .card_box img {
@@ -677,33 +708,4 @@ footer {
   .head_index {
     object-position: 0% 15%;
   }
-}
-
-#search-overlay {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-#search-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 25px;
-  border-radius: 0px;
-}
-
-#search-bar {
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  padding: 15px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  font-size: 50px;
 }

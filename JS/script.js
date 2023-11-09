@@ -4,12 +4,19 @@ function show_hide() {
 }
 
 
-document.getElementById("search-icon").addEventListener("click", function() {
-    document.getElementById("search-overlay").style.display = "block";
+document.getElementById("search_function").addEventListener("click", function() {
+    document.getElementById("search_background").style.display = "block";
 });
 
-document.getElementById("search-overlay").addEventListener("click", function(e) {
-    if (e.target.id === "search-overlay") {
-        document.getElementById("search-overlay").style.display = "none";
+document.getElementById("search_background").addEventListener("click", function(e) {
+    if (e.target.id === "search_background") {
+        document.getElementById("search_background").style.display = "none";
     }
 });
+
+document.getElementById("search_mobile").addEventListener("click", function() {
+    document.getElementById("search_background").style.display = "block";
+    document.getElementById('sidemenu').classList.remove('active');
+});
+
+
