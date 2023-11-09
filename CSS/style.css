@@ -516,6 +516,17 @@ footer {
     display: none;
   }
 
+  /* sizing */
+
+  .cards_wrapper,
+  .section_head,
+  .text_wrapper,
+  .event_container,
+  .section_head_even,
+  .text_wrapper_involved {
+    width: 85%;
+  }
+
   /* Img adjustment - mobile*/
 
   .head_involved {
