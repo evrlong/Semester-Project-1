@@ -365,15 +365,17 @@ footer {
 }
 
 .mob_ticket_button,
-.ticket_button {
+.ticket_button,
+.ticket_button_visit {
   color: white;
   width: 100%;
   background-color: #8ab9ff;
   border-style: none;
 }
 .mob_ticket_button h3,
-.ticket_button h3 {
-  margin: 10px;
+.ticket_button h3,
+.ticket_button_visit h3 {
+  line-height: 10px;
 }
 
 /* Involved */
