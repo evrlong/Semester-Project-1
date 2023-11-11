@@ -573,7 +573,7 @@ footer {
     height: 105px;
     position: fixed;
   }
-
+  .logo_header,
   header img {
     width: auto;
     height: 67px;
