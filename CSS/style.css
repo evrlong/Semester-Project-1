@@ -170,7 +170,7 @@ footer {
 .section_head {
   background-color: #757575;
   width: 70%;
-  margin: 60px auto 20px auto;
+  margin: 103px auto 0px auto;
   color: white;
 }
 
@@ -772,7 +772,7 @@ footer {
   .head_visit {
     object-position: 0% 50%;
   }
-
+  .head_event,
   .head_index {
     object-position: 0% 15%;
   }
