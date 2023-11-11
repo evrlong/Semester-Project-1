@@ -40,7 +40,7 @@ ul {
 }
 
 .text_container_event h5 {
-  padding: 10px 30px 0px 30px;
+  padding: 10px 30px 50px 30px;
   font-size: 20px;
   font-weight: 100;
   margin: 5px;
@@ -51,6 +51,7 @@ ul {
   margin: 5px;
 }
 
+.logo_header,
 header img {
   width: 130px;
   height: auto;
@@ -214,7 +215,7 @@ footer {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 #search_bar {
@@ -228,14 +229,19 @@ footer {
   font-size: 50px;
 }
 
+#search_bar::placeholder {
+  color: white;
+}
+
 #search_container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 25px;
-  border-radius: 0px;
+  border-radius: 5px;
+  background-color: #445d83;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Exhibition spaces */
@@ -269,7 +275,7 @@ footer {
 }
 
 .card_6 {
-  background: #b2d1ff;
+  background: #cde1ff;
 }
 
 .card_info {
@@ -290,7 +296,7 @@ footer {
 .card_7,
 .card_7 img {
   background: #4a8dad;
-  object-position: 0% 0%;
+  object-position: 0% 15%;
 }
 
 .card_8 {
@@ -309,8 +315,20 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-height: 100%;
   width: 70%;
   margin: 20px auto 40px auto;
+}
+
+.img_container {
+  height: 100%;
+  width: 100%;
+  line-height: 0px;
+}
+
+.img_container img {
+  max-height: 400px;
+  width: auto;
 }
 
 .text_container_event {
@@ -325,7 +343,8 @@ footer {
 
 .img_container_event img {
   width: 100%;
-  max-height: 400px;
+  height: auto;
+  min-height: 100%;
   object-fit: cover;
   object-position: 10% 70%;
 }
@@ -344,6 +363,7 @@ footer {
 .event_night {
   background: #7b563b;
 }
+
 .mob_ticket_button,
 .ticket_button {
   color: white;
@@ -406,7 +426,7 @@ footer {
   background-color: #8ab9ff;
   width: 70%;
   margin: auto;
-  height: 800px;
+  height: 100%;
 }
 .section_wrapper .section_head {
   width: 100%;
@@ -415,8 +435,7 @@ footer {
 .book_button {
   width: 70%;
   height: 70px;
-  padding: 0px;
-  margin: 30px auto 10px auto;
+  margin: 40px auto 40px auto;
   border-style: none;
   border-radius: 5px;
   background: #627d92;
@@ -443,6 +462,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 50%;
+  height: fit-content;
 }
 
 .input_prop {
@@ -512,7 +532,9 @@ footer {
   header ul,
   .visit,
   .magnify,
-  .ticket_button {
+  .ticket_button,
+  .card_1,
+  .card_4 {
     display: none;
   }
 
@@ -522,8 +544,9 @@ footer {
   .section_head,
   .text_wrapper,
   .event_container,
-  .section_head_even,
-  .text_wrapper_involved {
+  .section_head_event,
+  .text_wrapper_involved,
+  .section_wrapper {
     width: 85%;
   }
 
@@ -535,6 +558,10 @@ footer {
 
   .head_visit {
     object-position: 0% 40%;
+  }
+
+  .card_6 img {
+    object-position: 60% 45%;
   }
 
   /* Header/Footer */
@@ -682,14 +709,20 @@ footer {
   }
 
   #search_container {
-    background-color: rgb(74, 74, 88);
+    background-color: #445d83;
     width: 80%;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25) ¨¨;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   /*Event*/
 
   .event_container {
     flex-direction: column;
+    height: fit-content;
+  }
+
+  .left_split,
+  .right_split {
+    width: 100%;
   }
 
   /*Index*/
@@ -697,6 +730,7 @@ footer {
   .cards_wrapper,
   .text_wrapper {
     grid-template-columns: 1fr;
+    grid-gap: 40px;
   }
 
   .card_box img {
@@ -708,11 +742,16 @@ footer {
     height: 40px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   }
+
+  /*Booking*/
+  .split_wrapper {
+    flex-direction: column;
+  }
 }
 
 /* DESKTOP VIEW */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 701px) {
   /*Display none */
 
   .sidemenu_container,
