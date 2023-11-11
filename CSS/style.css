@@ -526,7 +526,7 @@ footer {
 
 /* Mobile view */
 
-@media only screen and (max-width: 701px) {
+@media only screen and (max-width: 768px) {
   /* display: none */
 
   header ul,
@@ -709,6 +709,7 @@ footer {
   }
 
   #search_container {
+    transform: translate(-50%, -378%);
     background-color: #445d83;
     width: 80%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
