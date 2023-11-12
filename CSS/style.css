@@ -694,7 +694,7 @@ footer {
     width: 150px;
     height: 600px;
     right: -150px;
-    transition: 0.4s;
+    transition: 0.8s;
   }
   #sidemenu .button-side {
     position: fixed;
