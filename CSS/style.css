@@ -57,7 +57,7 @@ header img {
   height: auto;
   align-self: center;
   margin-left: 25%;
-  transition: transform 0.8s ease;
+  transition: 0.5s ease;
 }
 
 .logo_header img:hover {
@@ -81,6 +81,7 @@ nav {
 }
 
 .fa-search {
+  tabindex: 0;
   cursor: pointer;
 }
 /* ---- Header/footer-------*/
@@ -167,7 +168,7 @@ footer {
   height: 3px;
 }
 .menu i {
-  transition: transform 0.5s ease;
+  transition: 0.5s ease;
 }
 .menu i:hover {
   transform: scale(1.3);
@@ -228,6 +229,13 @@ footer {
 
 .card_box {
   width: 100%;
+}
+
+.card_box:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  cursor: pointer;
 }
 .text_wrapper,
 .cards_wrapper {
@@ -413,11 +421,21 @@ footer {
   width: 100%;
   background-color: #8ab9ff;
   border-style: none;
+  transition: 0.3s ease;
 }
 .mob_ticket_button h3,
 .ticket_button h3,
 .ticket_button_visit h3 {
   line-height: 10px;
+}
+
+.ticket_button:hover,
+.ticket_button_visit:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+  border-style: none;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 /* Involved */
@@ -689,6 +707,7 @@ footer {
   }
   /* Sidemenu */
   #sidemenu {
+    white-space: nowrap;
     position: fixed;
     background: rgb(99, 99, 98);
     width: 150px;
@@ -740,11 +759,6 @@ footer {
     padding: 20px;
   }
 
-  #sidemenu img {
-    max-height: 20px;
-    left: 5px;
-  }
-
   .sidemenu_container {
     padding: 50px 40px 10px 20px;
   }
@@ -768,18 +782,17 @@ footer {
   .menu_item_selected:nth-child(1) {
     background-color: #4a8dad;
     padding: 10px 30px 10px 30px;
-    width: fit-content;
+    width: 100%;
     border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   }
   .topmenu_item_mob {
     transition: ease 0.75s;
+    min-width: 100%;
   }
 
   .topmenu_item_mob:hover {
-    background-color: #4a8dad;
-    padding: 10px 30px 10px 30px;
-    width: fit-content;
-    border-radius: 5px;
+    padding-left: 40px;
     transition: 0.75s;
   }
 
