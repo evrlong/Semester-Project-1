@@ -15,6 +15,11 @@ a:active {
   color: white;
 }
 
+h2 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
 h3 {
   font-family: Roboto;
   font-size: 28px;
@@ -374,7 +379,7 @@ footer {
   flex-wrap: wrap;
   max-height: 100%;
   width: 70%;
-  margin: 20px auto 40px auto;
+  margin: 5px auto 40px auto;
 }
 
 .img_container {
@@ -599,9 +604,9 @@ footer {
   font-weight: 700;
 }
 
-/* Mobile view */
+/* -------------------------------------------///////////--- Mobile view */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* display: none */
 
   header ul,
@@ -847,9 +852,149 @@ footer {
     flex-direction: column;
   }
 }
-/* DESKTOP VIEW */
 
-@media only screen and (min-width: 701px) {
+/* -------------------------------------------///////////---  TABLET VIEW */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* DISPLAY: NONE */
+  header ul,
+  .visit,
+  .magnify,
+  .ticket_button {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    position: fixed;
+    z-index: 9;
+  }
+
+  #sidemenu {
+    white-space: nowrap;
+    position: fixed;
+    background: rgb(99, 99, 98);
+    width: 150px;
+    height: 600px;
+    right: -150px;
+    transition: 0.8s;
+    z-index: 9;
+  }
+  #sidemenu .button-side {
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    transition: 0.2s;
+  }
+  #sidemenu.active .button-side {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  #sidemenu.active span {
+    width: 20px;
+    height: 5px;
+    background: #ffffff;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .button-side span {
+    width: 40px;
+    height: 5px;
+    background: #ffffff;
+    display: block;
+    margin-top: 4px;
+  }
+
+  #sidemenu.active {
+    width: 100%;
+    right: 0px;
+    box-shadow: 2px 2px 5px black;
+  }
+
+  #sidemenu a {
+    transition: 0.8s ease;
+    list-style: none;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 20px;
+  }
+
+  .sidemenu_container {
+    padding: 50px 40px 10px 20px;
+  }
+
+  #search_bar {
+    padding: 5px;
+    font-size: 40px;
+  }
+
+  #search_bar::placeholder {
+    color: #ffffffc0;
+  }
+
+  #search_container {
+    transform: translate(-50%, -50%);
+    background-color: #4a8dad;
+    width: 80%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu_item_selected:nth-child(1) {
+    background-color: #4a8dad;
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+  }
+  .topmenu_item_mob {
+    transition: ease 0.75s;
+    min-width: 100%;
+  }
+
+  .topmenu_item_mob:hover {
+    padding-left: 30px;
+    transition: 0.3s;
+  }
+
+  /* sizing Tablet */
+
+  .cards_wrapper,
+  .section_head,
+  .text_wrapper,
+  .event_container,
+  .section_head_event,
+  .text_wrapper_involved,
+  .section_wrapper {
+    width: 95%;
+  }
+
+  .logo_header,
+  header img {
+    width: 80px;
+    height: auto;
+    align-self: center;
+    margin-left: 5%;
+    transition: 0.5s ease;
+  }
+
+  .logo_header img:hover {
+    width: 85px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+/* -------------------------------------------///////////---  DESKTOP VIEW */
+
+@media only screen and (min-width: 1024px) {
   /*Display none */
 
   .sidemenu_container,
