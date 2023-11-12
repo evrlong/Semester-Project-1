@@ -793,12 +793,7 @@ footer {
 
   .topmenu_item_mob:hover {
     padding-left: 40px;
-    transition: 0.3s;
-    background-color: #4a8dad;
-    padding: 10px 30px 10px 30px;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+    transition: 0.75s;
   }
 
   /*Event*/
