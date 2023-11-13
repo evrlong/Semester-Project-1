@@ -2,9 +2,7 @@ body {
   margin: 0px;
   font-family: roboto;
   color: white;
-}
-.burger-dropdown {
-  display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:link,
@@ -780,6 +778,10 @@ footer {
     padding: 20px;
   }
 
+  #sidemenu a::selection {
+    background-color: transparent;
+    color: inherit;
+  }
   .sidemenu_container {
     padding: 50px 40px 10px 20px;
   }
