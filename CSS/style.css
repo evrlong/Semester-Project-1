@@ -423,7 +423,7 @@ footer {
 .event_night {
   background: #7b563b;
 }
-
+.book_button,
 .mob_ticket_button,
 .ticket_button,
 .ticket_button_visit {
@@ -437,10 +437,18 @@ footer {
   border-style: none;
   transition: 0.3s ease;
 }
+
+.book_button h3,
 .mob_ticket_button h3,
 .ticket_button h3,
 .ticket_button_visit h3 {
   line-height: 10px;
+}
+
+.book_button {
+  background-color: #4a8dad;
+  width: 50%;
+  margin: 40px auto 40px auto;
 }
 
 .ticket_button_visit:hover {
@@ -450,13 +458,17 @@ footer {
   box-shadow: 2px 3px 4px rgb(111, 127, 250);
   cursor: pointer;
 }
-
+.book_button:hover,
 .mob_ticket_button:hover,
 .ticket_button:hover {
   transition: 0.3s;
   transform: scale(1.01);
   box-shadow: 0 0 1px 1px rgb(111, 127, 250);
   cursor: pointer;
+}
+.book_button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1px 1px rgb(255, 255, 255);
 }
 
 /* Involved */
@@ -513,22 +525,6 @@ footer {
 }
 .section_wrapper .section_head {
   width: 100%;
-}
-
-.book_button {
-  width: 70%;
-  height: 70px;
-  margin: 40px auto 40px auto;
-  border-style: none;
-  border-radius: 5px;
-  background: #627d92;
-  color: white;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.book_button h3 {
-  padding: 10px;
-  margin: 0px;
 }
 
 .split_wrapper {
