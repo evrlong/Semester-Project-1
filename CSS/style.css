@@ -427,6 +427,9 @@ footer {
 .mob_ticket_button,
 .ticket_button,
 .ticket_button_visit {
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
   cursor: pointer;
   color: white;
   width: 100%;
@@ -447,6 +450,7 @@ footer {
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
+
 .mob_ticket_button:hover,
 .ticket_button:hover {
   transition: 0.3s;
