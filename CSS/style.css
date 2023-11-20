@@ -218,6 +218,15 @@ footer {
   position: relative;
   z-index: -1;
 }
+
+.overlay_text {
+  position: absolute;
+  font-weight: 900;
+  background-color: #4a8ead52;
+  top: 3em;
+  left: 10%;
+  font-size: 85px;
+}
 .section_head_event,
 .section_head {
   background-color: #757575;
@@ -629,6 +638,11 @@ footer {
     width: 85%;
   }
 
+  .overlay_text {
+    top: 2em;
+    font-size: 55px;
+  }
+
   /* Img adjustment - mobile*/
 
   .head_involved {
@@ -876,6 +890,11 @@ footer {
     z-index: 9;
   }
 
+  .overlay_text {
+    top: 1.8em;
+    font-size: 65px;
+  }
+
   #sidemenu {
     white-space: nowrap;
     position: fixed;
@@ -978,6 +997,20 @@ footer {
   .text_wrapper_involved,
   .section_wrapper {
     width: 90%;
+  }
+
+  /* Img adjustment - tablet*/
+
+  .head_involved {
+    object-position: 0% 58%;
+  }
+
+  .head_visit {
+    object-position: 0% 40%;
+  }
+  .head_event,
+  .head_index {
+    object-position: 0% -10%;
   }
 
   .logo_header,
