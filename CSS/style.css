@@ -2,7 +2,7 @@ body {
   margin: 0px;
   font-family: roboto;
   color: white;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; /* removes menu bug, showing as marked when clicked */
 }
 
 a:link,
@@ -12,6 +12,8 @@ a:active {
   text-decoration: none;
   color: white;
 }
+
+/* FONTS */
 
 h2 {
   font-size: 18px;
@@ -32,7 +34,6 @@ ul {
   padding: 0px;
   margin: 0px;
 }
-/* FONTS */
 
 .text_wrapper p {
   color: #000;
@@ -87,6 +88,7 @@ nav {
   tabindex: 0;
   cursor: pointer;
 }
+
 /* ---- Header/footer-------*/
 
 footer,
@@ -166,6 +168,7 @@ footer {
   bottom: -3px;
   transition: 0.75s;
 }
+
 .menu a:hover {
   transition: 0.75s;
   text-shadow: 1px 1px 1px rgba(0, 0, 1, 0.35);
@@ -176,9 +179,11 @@ footer {
   width: 100%;
   height: 2px;
 }
+
 .menu i {
   transition: 0.5s ease;
 }
+
 .menu i:hover {
   transform: scale(1.3);
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
@@ -227,6 +232,7 @@ footer {
   left: 10%;
   font-size: 85px;
 }
+
 .section_head_event,
 .section_head {
   background-color: #757575;
@@ -256,6 +262,7 @@ footer {
   cursor: pointer;
   z-index: 6;
 }
+
 .text_wrapper,
 .cards_wrapper {
   display: grid;
@@ -738,6 +745,7 @@ footer {
     padding: 10px 0px 10px 0px;
   }
   /* Sidemenu */
+
   #sidemenu {
     white-space: nowrap;
     position: fixed;
@@ -748,6 +756,7 @@ footer {
     transition: 0.8s;
     z-index: 9;
   }
+
   #sidemenu .button-side {
     cursor: pointer;
     position: fixed;
@@ -755,6 +764,7 @@ footer {
     right: 20px;
     transition: 0.2s;
   }
+
   #sidemenu.active .button-side {
     position: absolute;
     top: 40px;
@@ -977,6 +987,7 @@ footer {
     border-radius: 5px;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   }
+
   .topmenu_item_mob {
     transition: ease 0.75s;
     min-width: 100%;
