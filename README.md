@@ -1,4 +1,5 @@
-# Your project title
+# Semester Project 1
+Community Museum
 
 ![image](./IMAGES/gitasset/overviewMuseum.png)
 
