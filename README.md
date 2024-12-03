@@ -37,7 +37,7 @@ git clone https://github.com/evrlong/semester-project-1.git
 3. Navigate to folder:
 
 ```
-cd community-science-museum
+cd semester-project-1.git
 ```
 
 ### Running
