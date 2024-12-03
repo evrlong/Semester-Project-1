@@ -1,6 +1,6 @@
 # Your project title
 
-![image](./IMAGES/gitasset/overviewmuseum.png)
+![image](./IMAGES/gitasset/overviewMuseum.png)
 
 
 A simple overview of the use/purpose of the project.
